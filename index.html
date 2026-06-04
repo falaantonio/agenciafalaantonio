@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fala, Antônio! | Agência de Notícias Escolar</title>
+
+    <!-- Meta tags para SEO -->
+    <meta name="description" content="Agência de Notícias Escolar Fala, Antônio! - CETEP de Tempo Integral Santo Antônio, Queimadas - BA. Jornalismo estudantil, informação e protagonismo jovem.">
+    <meta name="keywords" content="agência de notícias escolar, CETEP Santo Antônio, Queimadas Bahia, jornalismo estudantil, Fala Antônio, ensino integral">
+    <meta name="author" content="Fala, Antônio!">
+
+    <!-- Favicon (ícone de microfone via emoji SVG) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎙️</text></svg>">
+
+    <!-- Font Awesome 6 - Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts - Poppins (títulos) + Inter (corpo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ==================== BARRA SUPERIOR COM REDES SOCIAIS ==================== -->
+<div class="top-bar" id="topBar">
+    <div class="container top-bar-content">
+        <span class="top-bar-message">
+            <i class="fa-solid fa-bolt"></i> Siga a gente:
+        </span>
+        <div class="top-bar-icons">
+            <a target="_blank" href="https://www.instagram.com/agenciafalaantonioqds/" title="Instagram" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a target="_blank" href="#" title="Facebook" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a target="_blank" href="https://www.youtube.com/@AgenciaFalaAntonio" title="YouTube" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a target="_blank" href="#" title="TikTok" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a target="_blank" href="#" title="WhatsApp" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </div>
+</div>
+    <!-- ==================== LOADING SCREEN ==================== -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <!-- Ícone de microfone -->
+            <div class="loading-icon">
+                <i class="fa-solid fa-microphone"></i>
+            </div>
+            <!-- Nome da agência -->
+            <h1 class="loading-title">Fala, Antônio!</h1>
+            <!-- Equalizador animado (barras de áudio) -->
+            <div class="equalizer">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+                <span class="bar bar4"></span>
+                <span class="bar bar5"></span>
+            </div>
+            <p class="loading-subtitle">Agência de Notícias Escolar</p>
+        </div>
+    </div>
+
+    
+
+    <!-- ==================== HEADER / NAVEGAÇÃO ==================== -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <!-- Logo -->
+            <a href="#hero" class="logo">
+                <i class="fa-solid fa-microphone-lines"></i>
+                <span>Fala, Antônio!</span>
+            </a>
+
+            <!-- Menu de navegação (desktop) -->
+            <nav class="nav" id="navMenu">
+                <ul class="nav-list">
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#queimadas" class="nav-link">Queimadas</a></li>
+                    <li><a href="#cetep" class="nav-link">CETEP</a></li>
+                    <li><a href="#galeria" class="nav-link">Galeria</a></li>
+                    <!-- <li><a href="#noticias" class="nav-link">Notícias</a></li> -->
+                    <li><a href="#redes" class="nav-link">Redes</a></li>
+                </ul>
+            </nav>
+
+            <!-- Botão hamburger (mobile) -->
+            <button class="hamburger" id="hamburgerBtn" aria-label="Menu de navegação">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ==================== MAIN CONTENT ==================== -->
+    <main>
+
+        <!-- ========== HERO SECTION ========== -->
+        <section class="hero" id="hero">
+            <!-- Overlay de textura tecnológica (pontos) -->
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <!-- Badge / Tag -->
+                <span class="hero-badge reveal">
+                    <i class="fa-solid fa-bolt"></i> Novo Projeto no CETEP
+                </span>
+                <!-- Título principal -->
+                <h1 class="hero-title reveal">
+                    A Voz dos Estudantes<br>
+                    <span class="hero-highlight">Tem Nome e Sobrenome</span>
+                </h1>
+                <!-- Slogan -->
+                <p class="hero-slogan reveal">
+                    Informação de verdade, feita por alunos para toda a comunidade. <br>
+                    Bem-vindo à <strong>Fala, Antônio!</strong> — a agência de notícias que dá voz ao CETEP Santo Antônio.
+                </p>
+                <!-- Botão CTA -->
+                <a href="#sobre" class="btn btn-primary reveal">
+                    Conheça o Projeto <i class="fa-solid fa-arrow-down"></i>
+                </a>
+                <!-- Imagem principal / espaço reservado -->
+                <div class="hero-image reveal">
+                    <img
+                        src="https://picsum.photos/seed/newsroom/800/400"
+                        alt="Equipe da agência Fala Antônio em ação"
+                        loading="eager"
+                        width="800"
+                        height="400"
+                    >
+                </div>
+            </div>
+            <!-- Ondulação decorativa na parte inferior -->
+            <div class="hero-wave">
+                <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+                    <path fill="#f8f9fa" d="M0,40 C360,100 1080,0 1440,60 L1440,100 L0,100 Z"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- ========== SOBRE A AGÊNCIA ========== -->
+        <section class="section sobre" id="sobre">
+            <div class="container">
+                <!-- Título da seção -->
+                <div class="section-header reveal">
+                    <span class="section-tag">Quem Somos</span>
+                    <h2 class="section-title">Sobre a <span>Fala, Antônio!</span></h2>
+                    <p class="section-subtitle">Uma agência de notícias feita por estudantes, para transformar informação em protagonismo.</p>
+                </div>
+
+                <div class="sobre-grid">
+                    <!-- Texto sobre a agência -->
+                    <div class="sobre-texto reveal">
+                        <p>
+                            A <strong>Fala, Antônio!</strong> nasceu da vontade dos alunos do CETEP de Tempo Integral Santo Antônio
+                            de criar um espaço onde a voz estudantil pudesse ecoar para além dos muros da escola.
+                            Somos uma agência de notícias escolar comprometida com a verdade, a ética jornalística
+                            e a valorização da nossa comunidade.
+                        </p>
+                        <p>
+                            Aqui, os próprios estudantes produzem reportagens, entrevistas, podcasts e conteúdos multimídia,
+                            desenvolvendo habilidades de comunicação, pensamento crítico e trabalho em equipe — tudo isso
+                            enquanto informam a escola e a cidade de Queimadas sobre o que realmente importa.
+                        </p>
+
+                        <!-- Objetivos em cards -->
+                        <div class="objetivos-grid">
+                            <div class="obj-card reveal">
+                                <div class="obj-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                                <h4>Dar Voz</h4>
+                                <p>Amplificar as ideias e opiniões dos estudantes do CETEP.</p>
+                            </div>
+                            <div class="obj-card reveal">
+                                <div class="obj-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                                <h4>Educar</h4>
+                                <p>Desenvolver competências de comunicação e mídia.</p>
+                            </div>
+                            <div class="obj-card reveal">
+                                <div class="obj-icon"><i class="fa-solid fa-handshake"></i></div>
+                                <h4>Conectar</h4>
+                                <p>Criar pontes entre escola, família e comunidade.</p>
+                            </div>
+                            <div class="obj-card reveal">
+                                <div class="obj-icon"><i class="fa-solid fa-star"></i></div>
+                                <h4>Inspirar</h4>
+                                <p>Mostrar que jovens podem ser agentes de transformação.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagem da agência -->
+                    <div class="sobre-imagem reveal">
+                        <img
+                            src="https://picsum.photos/seed/studentjournalism/600/450"
+                            alt="Estudantes produzindo conteúdo para a agência Fala Antônio"
+                            loading="lazy"
+                            width="600"
+                            height="450"
+                        >
+                        <div class="imagem-destaque">
+                            <i class="fa-solid fa-quote-right"></i>
+                            <p>"Jornalismo escolar é ferramenta de cidadania."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SOBRE QUEIMADAS - BA ========== -->
+        <section class="section queimadas" id="queimadas">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Nossa Cidade</span>
+                    <h2 class="section-title">Queimadas <span>- Bahia</span></h2>
+                    <p class="section-subtitle">Conheça a terra que inspira nossas histórias e acolhe nossa escola.</p>
+                </div>
+
+                <div class="queimadas-grid">
+                    <!-- Imagem da cidade -->
+                    <div class="queimadas-imagem reveal">
+                        <img
+                            src="https://picsum.photos/seed/bahiatown/600/400"
+                            alt="Vista da cidade de Queimadas - Bahia"
+                            loading="lazy"
+                            width="600"
+                            height="400"
+                        >
+                    </div>
+
+                    <!-- Texto sobre Queimadas -->
+                    <div class="queimadas-texto reveal">
+                        <p>
+                            Localizada no coração do semiárido baiano, <strong>Queimadas</strong> é uma cidade
+                            rica em história, cultura e tradições. Com um povo acolhedor e festivo, o município
+                            se destaca pelas manifestações culturais como o São João, as festas de padroeiro
+                            e a força da agricultura familiar.
+                        </p>
+                        <p>
+                            É nesse cenário que o CETEP de Tempo Integral Santo Antônio se insere, formando
+                            jovens protagonistas que carregam consigo o orgulho de ser queimadense e a vontade
+                            de contribuir para o desenvolvimento da região.
+                        </p>
+
+                        <!-- Destaques culturais -->
+                        <div class="destaques-culturais">
+                            <div class="destaque-item reveal">
+                                <i class="fa-solid fa-church"></i>
+                                <span>Festa do Padroeiro Santo Antônio</span>
+                            </div>
+                            <div class="destaque-item reveal">
+                                <i class="fa-solid fa-music"></i>
+                                <span>Tradições Juninas e Forró</span>
+                            </div>
+                            <div class="destaque-item reveal">
+                                <i class="fa-solid fa-leaf"></i>
+                                <span>Agricultura Familiar e Feiras</span>
+                            </div>
+                            <div class="destaque-item reveal">
+                                <i class="fa-solid fa-landmark"></i>
+                                <span>Patrimônio Histórico Local</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SOBRE O CETEP SANTO ANTÔNIO ========== -->
+        <section class="section cetep" id="cetep">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Nossa Escola</span>
+                    <h2 class="section-title">CETEP de Tempo Integral <span>Santo Antônio</span></h2>
+                    <p class="section-subtitle">Educação integral que transforma vidas e constrói futuros.</p>
+                </div>
+
+                <div class="cetep-grid">
+                    <!-- Texto sobre o CETEP -->
+                    <div class="cetep-texto reveal">
+                        <p>
+                            O <strong>CETEP de Tempo Integral Santo Antônio</strong> é referência em educação
+                            integral na região de Queimadas. Oferecendo ensino médio integrado à educação
+                            profissional, a escola prepara os alunos não apenas para o vestibular, mas para
+                            a vida — com formação técnica, humana e cidadã.
+                        </p>
+                        <p>
+                            No modelo de tempo integral, os estudantes passam o dia na escola, participando
+                            de aulas, oficinas, projetos especiais e atividades extracurriculares que ampliam
+                            seus horizontes. É nesse ambiente de aprendizado constante que a agência
+                            <strong>Fala, Antônio!</strong> encontrou terreno fértil para florescer.
+                        </p>
+                        <div class="cetep-info reveal">
+                            <div class="info-item">
+                                <i class="fa-solid fa-clock"></i>
+                                <strong>Ensino Integral</strong>
+                                <p>Aulas em tempo integral com formação técnica integrada.</p>
+                            </div>
+                            <div class="info-item">
+                                <i class="fa-solid fa-users"></i>
+                                <strong>Protagonismo Juvenil</strong>
+                                <p>Projetos que colocam o aluno no centro do aprendizado.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Imagens da escola -->
+                    <div class="cetep-imagens reveal">
+                        <img
+                            src="https://picsum.photos/seed/schoolfront/550/280"
+                            alt="Fachada do CETEP de Tempo Integral Santo Antônio"
+                            loading="lazy"
+                            width="550"
+                            height="280"
+                            class="cetep-img-principal"
+                        >
+                        <div class="cetep-imagens-secundarias">
+                            <img
+                                src="https://picsum.photos/seed/classroom/260/180"
+                                alt="Sala de aula do CETEP"
+                                loading="lazy"
+                                width="260"
+                                height="180"
+                            >
+                            <img
+                                src="https://picsum.photos/seed/studentsgroup/260/180"
+                                alt="Alunos em atividade no CETEP"
+                                loading="lazy"
+                                width="260"
+                                height="180"
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== GALERIA ========== -->
+        <section class="section galeria" id="galeria">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag">Momentos</span>
+                    <h2 class="section-title">Nossa <span>Galeria</span></h2>
+                    <p class="section-subtitle">Registros dos bastidores, eventos e da rotina da nossa agência.</p>
+                </div>
+
+                <!-- Grid de fotos -->
+                <div class="galeria-grid">
+                    <!-- SnapWidget -->
+<iframe src="https://snapwidget.com/embed/1124692" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden;  width:765px; height:689.9966666666667px" title="Posts from Instagram"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== NOTÍCIAS E PROJETOS ========== -->
+       
+        <!-- ========== REDES SOCIAIS ========== -->
+        <section class="section redes" id="redes">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="section-tag section-tag-light">Conecte-se</span>
+                    <h2 class="section-title section-title-light">Nossas <span>Redes Sociais</span></h2>
+                    <p class="section-subtitle section-subtitle-light">Siga a Fala, Antônio! e fique por dentro de tudo em tempo real.</p>
+                </div>
+
+                <!-- Ícones das redes sociais -->
+                <div class="redes-grid reveal">
+                    <a target="_blank" href="https://www.instagram.com/agenciafalaantonioqds/" class="rede-card" title="Instagram" aria-label="Siga-nos no Instagram">
+                        <div class="rede-icon-wrapper">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <span>@fala.antonio</span>
+                        <small>Em breve</small>
+                    </a>
+                    <a href="#" class="rede-card" title="Facebook" aria-label="Curta nossa página no Facebook">
+                        <div class="rede-icon-wrapper">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                        <span>/fala.antonio</span>
+                        <small>Em breve</small>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com/@AgenciaFalaAntonio" class="rede-card" title="YouTube" aria-label="Inscreva-se no nosso canal do YouTube">
+                        <div class="rede-icon-wrapper">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <span>Fala Antônio</span>
+                        <small></small>
+                    </a>
+                    <a href="#" class="rede-card" title="TikTok" aria-label="Siga-nos no TikTok">
+                        <div class="rede-icon-wrapper">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </div>
+                        <span>@fala.antonio</span>
+                        <small>Em breve</small>
+                    </a>
+                    <a href="#" class="rede-card" title="WhatsApp" aria-label="Entre no nosso grupo de WhatsApp">
+                        <div class="rede-icon-wrapper">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <span>Canal WhatsApp</span>
+                        <small>Em breve</small>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ==================== RODAPÉ ==================== -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Coluna 1 - Logo e descrição -->
+                <div class="footer-col footer-about">
+                    <a href="#hero" class="footer-logo">
+                        <i class="fa-solid fa-microphone-lines"></i>
+                        <span>Fala, Antônio!</span>
+                    </a>
+                    <p>Agência de Notícias Escolar do CETEP de Tempo Integral Santo Antônio — Queimadas, Bahia.
+                        Dando voz aos estudantes e conectando a comunidade.</p>
+                </div>
+
+                <!-- Coluna 2 - Links rápidos -->
+                <div class="footer-col footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#sobre">Sobre a Agência</a></li>
+                        <li><a href="#queimadas">Queimadas - BA</a></li>
+                        <li><a href="#cetep">CETEP Santo Antônio</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <!-- <li><a href="#noticias">Notícias</a></li> -->
+                    </ul>
+                </div>
+
+                <!-- Coluna 3 - Contato/Info -->
+                <div class="footer-col footer-info">
+                    <h4>Informações</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> Queimadas - Bahia</li>
+                        <li><i class="fa-solid fa-school"></i> CETEP Santo Antônio</li>
+                        <li><i class="fa-solid fa-envelope"></i> contato@falaantonio.com.br</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Linha divisória e copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 <strong>Fala, Antônio!</strong> — Agência de Notícias Escolar. Todos os direitos reservados.</p>
+                <p class="footer-creditos">Feito com <i class="fa-solid fa-heart"></i> pelos alunos do CETEP de Tempo Integral Santo Antônio.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==================== BOTÃO VOLTAR AO TOPO ==================== -->
+    <button class="btn-topo" id="btnTopo" aria-label="Voltar ao topo da página">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript Principal -->
+    <script src="script.js"></script>
+</body>
+</html>
