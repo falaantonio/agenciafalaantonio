@@ -43,18 +43,23 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburgerBtn.addEventListener('click', () => {
         hamburgerBtn.classList.toggle('active');
         navMenu.classList.toggle('active');
+        
+        // Ajusta z-index da top-bar para não aparecer sobre o menu
+        const topBar = document.getElementById('topBar');
+        if (navMenu.classList.contains('active')) {
+            topBar.style.zIndex = '999'; // abaixo do menu
+        } else {
+            topBar.style.zIndex = '1001'; // volta ao normal
+        }
     });
 
     // Fechar menu ao clicar em um link (navegação suave)
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            // Fecha o menu mobile
+        link.addEventListener('click', () => {
             hamburgerBtn.classList.remove('active');
             navMenu.classList.remove('active');
-
-            // Scroll suave para a seção (comportamento padrão do HTML já faz)
-            // Apenas garantimos que não haja conflito
+            document.getElementById('topBar').style.zIndex = '1001';
         });
     });
 

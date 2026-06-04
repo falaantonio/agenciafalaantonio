@@ -43,7 +43,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px;  /* Ajuste para menu fixo */
+    scroll-padding-top: 130px;  /* Ajuste para menu fixo */
 }
 
 body {
@@ -320,7 +320,7 @@ body {
     position: relative;
     background-color: var(--dark);
     color: var(--white);
-    padding: 182px 0 0;  
+    padding: 150px 0 0;  
     overflow: hidden;
 }
 
@@ -496,6 +496,14 @@ body {
     font-weight: 700;
     color: var(--secondary);
     margin-bottom: 1rem;
+}
+.snapwidget-widget {
+    width: 100% !important;
+    max-width: 100%;
+    height: auto;
+    min-height: 400px;
+    display: block;
+    margin: 0 auto;
 }
 
 .section-title span {
@@ -745,6 +753,11 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+}
+
+/* Quando há apenas o iframe, expande para largura total */
+.galeria-grid:has(.snapwidget-widget) {
+    grid-template-columns: 1fr;
 }
 
 .galeria-card {
@@ -1108,6 +1121,19 @@ body {
 
 /* Smartphones (até 768px) */
 @media (max-width: 768px) {
+    .nav {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 75%;
+        height: 100vh;
+        background-color: var(--dark);
+        flex-direction: column;
+        padding: 130px 30px 30px; /* aumentei para compensar as duas barras */
+        transition: right var(--transition);
+        box-shadow: -5px 0 25px rgba(0,0,0,0.5);
+        z-index: 1002;  /* acima da top-bar */
+    }
     .hamburger {
         display: flex;
     }
